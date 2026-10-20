@@ -1,0 +1,19 @@
+:root { --campus: url(https://www.utc.edu.vn/Upload/2026/03/20/utc-15-tang.jpg), url(../images/campus.svg); --gold: #e0a82e; --navy: #183b66; }
+body { background-image: linear-gradient(#f4f7fbe6, #f4f7fbf2), var(--campus); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+.login-body { background-image: linear-gradient(#0b244799, #0b244755), var(--campus); background-position: center; background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
+header { background-image: linear-gradient(120deg, #12325bdd, #245a91aa), var(--campus); background-position: center 35%; background-size: cover; background-repeat: no-repeat; border-bottom: 4px solid var(--gold); padding: 34px 18px; }
+header h1 { color: #fff; font-family: Georgia, 'Times New Roman', serif; letter-spacing: .5px; text-shadow: 0 2px 8px #0b244788; }
+header h1::before { content: "🎓 "; }
+header p { color: #dbeafe; }
+nav { position: sticky; top: 0; z-index: 5; align-items: center; box-shadow: 0 2px 10px #0b244744; }
+nav a:hover, nav a.active { background: var(--gold); color: #1b2a41; font-weight: 600; }
+nav a:focus-visible, button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.userbox { margin-left: auto; display: flex; align-items: center; gap: 10px; color: #fff; font-size: 14px; padding-left: 10px; }
+.logout { background: #ffffff26; padding: 7px 12px; border: 1px solid #ffffff55; }
+.panel { background: #fffffff0; border-top: 3px solid #dbeafe; }
+.stat { border-left: 5px solid currentColor; box-shadow: 0 3px 12px #1e293b14; }
+.toast { position: fixed; top: 74px; left: 50%; transform: translateX(-50%); background: #991b1b; color: #fff; padding: 12px 20px; border-radius: 8px; z-index: 20; box-shadow: 0 8px 24px #0f172a55; animation: toast-in .3s ease-out; }
+@keyframes toast-in { from { opacity: 0; transform: translate(-50%, -10px); } }
+footer { background: #12325b; color: #cbd5e1; border-top: 4px solid var(--gold); }
+@media (max-width: 760px) { .userbox { margin-left: 0; width: 100%; justify-content: center; } }
+@media (prefers-reduced-motion: reduce) { .toast { animation: none; } }

@@ -1,0 +1,21 @@
+.register-panel {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.register-panel form {
+    padding: 4px
+}
+
+#bookingMessage {
+    font-weight: 600
+}
+
+#bookingMessage.success {
+    color: #166534
+}
+
+#bookingMessage.error {
+    color: #b91c1c
+}

@@ -1,0 +1,14 @@
+#roomDialog input,#roomDialog select {
+    margin-bottom: 4px
+}
+
+.room-actions {
+    display: flex;
+    gap: 6px;
+    white-space: nowrap
+}
+
+.room-actions button {
+    padding: 6px 9px;
+    font-size: 13px
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   T&igrave;m kiếm ph&ograve;ng học
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/decor.css" rel="stylesheet"/>
+  <link href="css/timkiem.css" rel="stylesheet"/>
+ </head>
+ <body data-page="search">
+  <header>
+   <h1>
+    QUẢN L&Yacute; PH&Ograve;NG HỌC
+   </h1>
+   <p>
+    T&igrave;m ph&ograve;ng theo &dstrok;iều kiện
+   </p>
+  </header>
+  <nav>
+   <a href="trangchu.html">
+    Trang chủ
+   </a>
+   <a href="phonghoc.html">
+    Ph&ograve;ng học
+   </a>
+   <a class="active" href="timkiem.html">
+    T&igrave;m kiếm
+   </a>
+   <a href="lichphong.html">
+    Lịch ph&ograve;ng
+   </a>
+   <a href="dangky.html">
+    &Dstrok;&abreve;ng k&yacute;
+   </a>
+  </nav>
+  <main>
+   <h2>
+    T&Igrave;M KIẾM PH&Ograve;NG HỌC
+   </h2>
+   <section class="panel filters">
+    <div class="form-grid">
+     <div>
+      <label for="keyword">
+       Từ kh&oacute;a
+      </label>
+      <input id="keyword" placeholder="M&atilde; ph&ograve;ng hoặc t&ecirc;n ph&ograve;ng"/>
+     </div>
+     <div>
+      <label for="filterBuilding">
+       T&ograve;a nh&agrave;
+      </label>
+      <select id="filterBuilding">
+       <option value="">
+        Tất cả
+       </option>
+       <option>
+        A
+       </option>
+       <option>
+        B
+       </option>
+       <option>
+        C
+       </option>
+       <option>
+        D
+       </option>
+      </select>
+     </div>
+     <div>
+      <label for="filterType">
+       Loại ph&ograve;ng
+      </label>
+      <select id="filterType">
+       <option value="">
+        Tất cả
+       </option>
+       <option>
+        Ph&ograve;ng l&yacute; thuyết
+       </option>
+       <option>
+        Ph&ograve;ng thực h&agrave;nh
+       </option>
+       <option>
+        Ph&ograve;ng họp
+       </option>
+      </select>
+     </div>
+     <div>
+      <label for="filterStatus">
+       Trạng th&aacute;i
+      </label>
+      <select id="filterStatus">
+       <option value="">
+        Tất cả
+       </option>
+       <option value="trong">
+        Trống
+       </option>
+       <option value="sudung">
+        &Dstrok;ang sử dụng
+       </option>
+       <option value="baotri">
+        Bảo tr&igrave;
+       </option>
+      </select>
+     </div>
+    </div>
+    <div class="actions">
+     <button class="button" id="searchBtn">
+      T&igrave;m kiếm
+     </button>
+     <button class="button secondary" id="resetSearch">
+      X&oacute;a bộ lọc
+     </button>
+    </div>
+   </section>
+   <section class="panel">
+    <div class="section-heading">
+     <h2>
+      KẾT QUẢ T&Igrave;M KIẾM
+     </h2>
+     <span class="muted" id="searchCount">
+      0 ph&ograve;ng
+     </span>
+    </div>
+    <div class="table-wrap">
+     <table>
+      <thead>
+       <tr>
+        <th>
+         STT
+        </th>
+        <th>
+         M&atilde; ph&ograve;ng
+        </th>
+        <th>
+         T&ecirc;n ph&ograve;ng
+        </th>
+        <th>
+         T&ograve;a nh&agrave;
+        </th>
+        <th>
+         Loại ph&ograve;ng
+        </th>
+        <th>
+         Sức chứa
+        </th>
+        <th>
+         Trạng th&aacute;i
+        </th>
+        <th>
+         &Dstrok;&abreve;ng k&yacute;
+        </th>
+       </tr>
+      </thead>
+      <tbody id="searchResults">
+      </tbody>
+     </table>
+    </div>
+   </section>
+  </main>
+  <footer>
+   &copy; 2026 - Hệ thống quản l&yacute; ph&ograve;ng học
+  </footer>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>

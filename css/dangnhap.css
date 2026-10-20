@@ -1,0 +1,18 @@
+.login-body { min-height: 100vh; display: grid; }
+.login-wrap { width: min(1040px, 94%); margin: auto; display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; padding: 32px 0; }
+.login-hero { color: #fff; text-shadow: 0 2px 14px #0b2447aa; }
+.login-hero h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.1; margin: 0 0 14px; font-family: Georgia, 'Times New Roman', serif; }
+.login-hero p { font-size: 18px; max-width: 30ch; margin: 0; }
+.login-card { background: #fffffff2; border-radius: 14px; padding: 28px; box-shadow: 0 20px 60px #0b244766; }
+.login-card h2 { margin-bottom: 14px; }
+.login-card form { display: grid; gap: 6px; }
+.check { display: flex; align-items: center; gap: 8px; font-weight: 400; margin: 4px 0; }
+.check input { width: auto; }
+#loginMessage { color: #b91c1c; font-weight: 600; min-height: 1.5em; margin: 4px 0; }
+.button.block { width: 100%; }
+.demo { margin-top: 20px; padding-top: 16px; border-top: 1px solid #e2e8f0; display: grid; gap: 8px; }
+.demo p { margin: 0; }
+.demo-btn { text-align: left; background: #edf3fa; color: #243247; display: grid; gap: 2px; border: 1px solid #cfdceb; }
+.demo-btn span { font-size: 13px; color: #55657a; }
+.demo-btn:hover { background: #dbeafe; }
+@media (max-width: 760px) { .login-wrap { grid-template-columns: 1fr; } .login-hero { text-align: center; } .login-hero p { margin: auto; } }

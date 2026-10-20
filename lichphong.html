@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Lịch sử dụng ph&ograve;ng
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/decor.css" rel="stylesheet"/>
+  <link href="css/lichphong.css" rel="stylesheet"/>
+ </head>
+ <body data-page="schedule">
+  <header>
+   <h1>
+    QUẢN L&Yacute; PH&Ograve;NG HỌC
+   </h1>
+   <p>
+    Theo d&otilde;i lịch sử dụng ph&ograve;ng
+   </p>
+  </header>
+  <nav>
+   <a href="trangchu.html">
+    Trang chủ
+   </a>
+   <a href="phonghoc.html">
+    Ph&ograve;ng học
+   </a>
+   <a href="timkiem.html">
+    T&igrave;m kiếm
+   </a>
+   <a class="active" href="lichphong.html">
+    Lịch ph&ograve;ng
+   </a>
+   <a href="dangky.html">
+    &Dstrok;&abreve;ng k&yacute;
+   </a>
+  </nav>
+  <main>
+   <h2>
+    LỊCH SỬ DỤNG PH&Ograve;NG
+   </h2>
+   <section class="panel">
+    <div class="form-grid">
+     <div>
+      <label for="scheduleDate">
+       Ng&agrave;y sử dụng
+      </label>
+      <input id="scheduleDate" type="date"/>
+     </div>
+     <div>
+      <label for="scheduleRoom">
+       Ph&ograve;ng
+      </label>
+      <select id="scheduleRoom">
+       <option value="">
+        Tất cả ph&ograve;ng
+       </option>
+      </select>
+     </div>
+     <div class="actions">
+      <button class="button" id="filterSchedule">
+       Lọc lịch
+      </button>
+      <button class="button secondary" id="clearSchedule">
+       X&oacute;a lọc
+      </button>
+     </div>
+    </div>
+   </section>
+   <section class="panel">
+    <div class="table-wrap">
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Ng&agrave;y
+        </th>
+        <th>
+         Thời gian
+        </th>
+        <th>
+         Ph&ograve;ng
+        </th>
+        <th>
+         Nội dung
+        </th>
+        <th>
+         Người sử dụng
+        </th>
+        <th>
+         M&atilde; SV / GV
+        </th>
+        <th>
+         Thao t&aacute;c
+        </th>
+       </tr>
+      </thead>
+      <tbody id="scheduleTable">
+      </tbody>
+     </table>
+    </div>
+   </section>
+  </main>
+  <footer>
+   &copy; 2026 - Hệ thống quản l&yacute; ph&ograve;ng học
+  </footer>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>

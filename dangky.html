@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   &Dstrok;&abreve;ng k&yacute; sử dụng ph&ograve;ng
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/decor.css" rel="stylesheet"/>
+  <link href="css/dangky.css" rel="stylesheet"/>
+ </head>
+ <body data-page="register">
+  <header>
+   <h1>
+    QUẢN L&Yacute; PH&Ograve;NG HỌC
+   </h1>
+   <p>
+    &Dstrok;&abreve;ng k&yacute; sử dụng ph&ograve;ng học
+   </p>
+  </header>
+  <nav>
+   <a href="trangchu.html">
+    Trang chủ
+   </a>
+   <a href="phonghoc.html">
+    Ph&ograve;ng học
+   </a>
+   <a href="timkiem.html">
+    T&igrave;m kiếm
+   </a>
+   <a href="lichphong.html">
+    Lịch ph&ograve;ng
+   </a>
+   <a class="active" href="dangky.html">
+    &Dstrok;&abreve;ng k&yacute;
+   </a>
+  </nav>
+  <main>
+   <h2>
+    &Dstrok;&Abreve;NG K&Yacute; SỬ DỤNG PH&Ograve;NG
+   </h2>
+   <section class="panel register-panel">
+    <form id="bookingForm">
+     <div class="form-grid">
+      <div>
+       <label for="fullName">
+        Họ v&agrave; t&ecirc;n *
+       </label>
+       <input id="fullName" maxlength="100" placeholder="Nhập họ v&agrave; t&ecirc;n" required=""/>
+      </div>
+      <div>
+       <label for="studentId">
+        M&atilde; SV / GV *
+       </label>
+       <input id="studentId" maxlength="30" placeholder="Nhập m&atilde; sinh vi&ecirc;n hoặc giảng vi&ecirc;n" required=""/>
+      </div>
+      <div>
+       <label for="bookingRoom">
+        Chọn ph&ograve;ng *
+       </label>
+       <select id="bookingRoom" required="">
+        <option value="">
+         -- Chọn ph&ograve;ng --
+        </option>
+       </select>
+      </div>
+      <div>
+       <label for="bookingDate">
+        Ng&agrave;y sử dụng *
+       </label>
+       <input id="bookingDate" required="" type="date"/>
+      </div>
+      <div>
+       <label for="bookingTime">
+        Khung giờ *
+       </label>
+       <select id="bookingTime" required="">
+        <option value="">
+         -- Chọn giờ --
+        </option>
+        <option value="07:00-09:00">
+         7:00 - 9:00
+        </option>
+        <option value="09:00-11:00">
+         9:00 - 11:00
+        </option>
+        <option value="13:00-15:00">
+         13:00 - 15:00
+        </option>
+        <option value="15:00-17:00">
+         15:00 - 17:00
+        </option>
+       </select>
+      </div>
+      <div class="full-width">
+       <label for="purpose">
+        Mục &dstrok;&iacute;ch sử dụng *
+       </label>
+       <textarea id="purpose" maxlength="300" placeholder="M&ocirc; tả mục &dstrok;&iacute;ch sử dụng ph&ograve;ng" required="" rows="4"></textarea>
+      </div>
+     </div>
+     <p class="muted">
+      * C&aacute;c trường bắt buộc. Ph&ograve;ng &dstrok;ang bảo tr&igrave; kh&ocirc;ng thể &dstrok;&abreve;ng k&yacute;; lịch tr&ugrave;ng ph&ograve;ng, ng&agrave;y v&agrave; khung giờ sẽ bị từ chối.
+     </p>
+     <div class="actions">
+      <button class="button" type="submit">
+       &Dstrok;&abreve;ng k&yacute;
+      </button>
+      <button class="button secondary" type="reset">
+       Nhập lại
+      </button>
+     </div>
+     <p id="bookingMessage" role="status">
+     </p>
+    </form>
+   </section>
+  </main>
+  <footer>
+   &copy; 2026 - Hệ thống quản l&yacute; ph&ograve;ng học
+  </footer>
+  <script src="js/auth.js"></script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>
